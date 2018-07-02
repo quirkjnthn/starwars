@@ -1,11 +1,14 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
+    <ion-title>Ships</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
+  <h2>Listado</h2> 
+  <ion-list>
+    <button ion-item *ngFor="let ship of ships">
+      {{ship.name}}
+    </button>
+  </ion-list>
 </ion-content>
